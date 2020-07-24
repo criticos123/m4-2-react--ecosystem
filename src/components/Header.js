@@ -33,9 +33,6 @@ const Header = (props) => {
         <Link to="/about">
           <li>about</li>
         </Link>
-        <Link to="/items">
-          <li>items</li>
-        </Link>
       </ul>
     </Page>
   );
