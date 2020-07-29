@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 const Fruit = styled.div`
-  border: 2px solid black;
   width: 550px;
   height: 500px;
 `;

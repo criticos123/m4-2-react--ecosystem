@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 const Page = styled.header`
   display: flex;
@@ -9,9 +10,15 @@ const Page = styled.header`
     flex-direction: row;
   }
   a {
+    color: blue;
     text-decoration: none;
+    margin-right: 10px;
     list-style: none;
     font-family: "Lato", sans-serif;
+  }
+  .navLink {
+    color: maroon;
+    border-bottom: 3px solid maroon;
   }
   li {
     margin: 10px;
@@ -27,12 +34,12 @@ const Header = (props) => {
     <Page>
       <h1>Fruit Emporium</h1>
       <ul>
-        <Link to="/">
+        <NavLink activeClassName="navLink" to="/">
           <li>Home</li>
-        </Link>
-        <Link to="/about">
+        </NavLink>
+        <NavLink activeClassName="navLink" to="/about">
           <li>about</li>
-        </Link>
+        </NavLink>
       </ul>
     </Page>
   );

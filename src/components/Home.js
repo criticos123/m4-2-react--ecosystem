@@ -4,7 +4,7 @@ import { items } from "../data";
 import styled from "styled-components";
 const Page = styled.header`
   p {
-    font-size: 10px;
+    font-size: 15px;
   }
 `;
 const Home = (props) => {
